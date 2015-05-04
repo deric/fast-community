@@ -1,2 +1,5 @@
 fastcommunity
 *.o
+*.joins
+*.txt
+*.info
