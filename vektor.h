@@ -30,7 +30,7 @@
 #if !defined(vektor_INCLUDED)
 #define vektor_INCLUDED
 
-#include <iostream.h>
+#include <iostream>
 
 #if !defined(vektor_INCLUDED)
 #define vektor_INCLUDED

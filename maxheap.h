@@ -40,8 +40,9 @@ struct tuple {
 #if !defined(MAXHEAP_INCLUDED)
 #define MAXHEAP_INCLUDED
 
-#include <iostream.h>
+#include <iostream>
 
+using namespace std;
 /*   Because using this heap requires us to be able to modify an arbitrary element's
 	data in constant O(1) time, I use to tricky tactic of having elements in an array-
 	based heap only contain addresses to the data, rather than the data itself. In this

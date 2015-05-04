@@ -8,13 +8,14 @@ RM = /bin/rm -f
 
 # compiler name and flags
 CCC = g++
-CCFLAGS = -O3 -fomit-frame-pointer -funroll-loops -fforce-mem -fforce-addr -fexpensive-optimizations
+#CCFLAGS = -O3 -fomit-frame-pointer -funroll-loops -fforce-mem -fforce-addr -fexpensive-optimizations
+CCFLAGS = -O3 -fomit-frame-pointer -funroll-loops -fforce-addr -fexpensive-optimizations
 
 # loader flags
 LDFLAGS = 
 
 ### local program information
-EXEC=FastCommunityMH
+EXEC=fastcommunity
 SOURCES= fastcommunity_mh.cc
 
 ### intermediate objects
