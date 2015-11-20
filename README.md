@@ -28,6 +28,17 @@ Description of command line arguments:
 * `-o <directory>` directory for file output
 * `-c <int>` record the agglomerated network at step `<int>`
 
+## Algorithm
+
+See http://www.arxiv.org/abs/cond-mat/0408187 for more information
+
+  - read network structure from data file (see below for constraints)
+  - builds dQ, H and a data structures
+  - runs new fast community structure inference algorithm
+  - records Q(t) function to file
+  - (optional) records community structure (at t==cutstep)
+  - (optional) records the list of members in each community (at t==cutstep)
+
 ## Compiling
 
 On Debian install:
@@ -40,3 +51,16 @@ And compile using `make`:
 ```
 $ make
 ```
+
+## License
+
+GNU GPLv2
+
+## Authors
+
+  * Aaron Clauset  (aaron@cs.unm.edu)
+
+### Collaborators
+
+  * Dr. Cris Moore (moore@cs.unm.edu)
+  * Dr. Mark Newman (mejn@umich.edu)
